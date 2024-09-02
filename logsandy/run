@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PYSRC="$(dirname $0)/../analyze.py"
+
+python3 $PYSRC "$(dirname $0)/logsandy1mb-merge3.txt" -m 10 -M 50 -R 6 -B 32 -U 0.5 -N 8 -l 6 -L 20

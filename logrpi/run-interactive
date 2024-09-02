@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PYSRC="$(dirname $0)/../analyze.py"
+
+ipython3 $PYSRC -i -- "$(dirname $0)/logrpi_user_merge3.txt" -m 10 -M 30 -R 4 -B 8 -U 0.5 -N 4
